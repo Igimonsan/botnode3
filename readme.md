@@ -57,6 +57,9 @@ HUGGINGFACE_API_KEY=your_huggingface_api_token_here
 4. Buat token baru dengan permission "Read"
 5. Copy token dan paste ke file `.env`
 
+!!!! SEBELUM MENJALANKAN BOT. HARAP LAKUKAN LANGKAH INI
+### HAPUS FILE DI DALAM FOLDER SESSION AGAR SESI LOGIN DIPERBARUI. SETELAH ITU BISA DILANJUTKAN KE STEP SELANJUTNYA
+
 ### 5. Jalankan Bot
 ```bash
 npm start
