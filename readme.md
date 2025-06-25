@@ -211,90 +211,14 @@ Jika ada pertanyaan atau issue:
 2. Cek dokumentasi Hugging Face
 3. Lihat troubleshooting guide di atas
 
-
-
----
-
-**Made with ❤️ for Indonesian developers**
-
-## Konfigurasi tambahan
-
-# WhatsApp Bot - Update Quote Generator
-
-## Fitur Baru: Quote Generator 💭
-
-Bot sekarang dilengkapi dengan fitur Quote Generator yang dapat menghasilkan:
-- 📝 Quote Random inspiratif
-- 🎭 Pantun Random
-- 🔥 Kata-kata Motivasi
-
-
-## Cara Menggunakan
-
-### Menu Utama
-Bot sekarang memiliki 5 pilihan menu:
-1. Download TikTok ⚡
-2. Chat AI 🤖
-3. Help & Info ℹ️
-4. Sticker Maker 🎨
-5. **Quote Generator 💭** (BARU)
-
-### Command Baru
-- `/quote` atau `quote` - Quick access ke quote generator
-- `/q` atau `q` - Shortcut untuk quote generator
-
-### Quote Generator
-Setelah masuk ke mode Quote Generator, user dapat memilih:
-1. **Quote Random** - Quote inspiratif dari tokoh terkenal
-2. **Pantun Random** - Pantun tradisional Indonesia
-3. **Kata Motivasi** - Kata-kata motivasi untuk semangat
-
-## Menambah Konten Quote
-
-Untuk menambah quote, pantun, atau motivasi, edit file `config/config.js` di bagian `quotes`:
-
-### Menambah Quote Random
-```javascrip
-**File CONFIG.js**
-quotes: {
-    random: [
-        {
-            text: "Teks quote di sini",
-            author: "Nama pengarang"
-        },
-        // Tambah quote baru di sini
-    ]
-}
-```
-
-### Menambah Pantun
-```javascript
-pantun: [
-    "Baris 1 pantun\nBaris 2 pantun\nBaris 3 pantun\nBaris 4 pantun",
-    // Tambah pantun baru di sini
-]
-```
-
-### Menambah Motivasi
-```javascript
-motivasi: [
-    {
-        text: "Teks motivasi di sini",
-        author: "Nama pengarang"
-    },
-    // Tambah motivasi baru di sini
-]
-```
-
-## Testing
-
-Setelah update, test fitur dengan:
-1. Ketik `/menu` - pastikan muncul 5 pilihan
-2. Pilih angka `5` - masuk ke Quote Generator
-3. Pilih `1`, `2`, atau `3` - test masing-masing jenis quote
-4. Ketik `/quote` - test direct command
-
-## Version Info
-- **Previous:** v2.3.0
-- **Current:** v2.4.0
-- **New Feature:** Quote Generator (Quote Random, Pantun, Kata Motivasi)
+## Update sessions
+- Update Sessions harus dilakukan secara berkala, terutama jika BOT offline. karena ada kalanya Sessions login BOT sudah expired
+  Step - by step
+  1. Remove folder Sessions lama $git rm -r sessions
+  2. Jalankan npm start dengan lokal (Cmd) lalu scan
+  3. Upload folder sessions $git add sessions
+  4. Tambahkan commit $git commit -m "Komentar"
+  5. Push $git push -up Origin main
+Tunggu sampai folder sessions benar benar terbaca oleh vps/tempat hosting kamu. Jika sudah BOT akan otomatis online kembali
+! GUNAKAN DENGAN BIJAK
+**Made with Igimonsan**
