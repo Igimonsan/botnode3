@@ -27,28 +27,6 @@ class AIHandler {
         }
     }
 
-    // Check if message is an exit command
-    isExitCommand(message) {
-        const lowerMessage = message.toLowerCase().trim();
-        const exitCommands = [
-            '/menu', 'menu', '/exit', 'exit', 
-            'keluar', '/keluar', 'kembali', '/kembali',
-            'back', '/back', 'quit', '/quit'
-        ];
-        return exitCommands.includes(lowerMessage);
-    }
-
-    // Handle exit from AI mode
-    handleExitCommand(userId) {
-        this.setAIMode(userId, false);
-        return {
-            success: true,
-            message: config.messages.mainMenu,
-            shouldContinue: false,
-            exitToMenu: true
-        };
-    }
-
     // Handle AI command (/ai atau /chat)
     async handleAICommand(userId) {
         this.setAIMode(userId, true);
@@ -199,9 +177,11 @@ class AIHandler {
 
         // Help command dalam mode AI
         if (lowerMessage === '/help' || lowerMessage === 'help') {
+            const helpMessage = `🤖 *BANTUAN AI CHAT*\n\n*Perintah khusus:*\n/model - Ganti model AI\n/clear - Hapus history chat\n/stats - Lihat statistik\n/menu - Kembali ke menu utama\n\n*Tips:*\n• AI bisa mengingat percakapan sebelumnya\n• Maksimal 10 pesan per menit\n• History otomatis dibatasi 10 exchange\n• Ketik dengan natural, seperti ngobrol biasa!`;
+            
             return {
                 success: true,
-                message: config.messages.aiHelp,
+                message: helpMessage,
                 shouldContinue: false
             };
         }
@@ -225,12 +205,7 @@ class AIHandler {
 
         // Jika user dalam mode AI
         if (this.isInAIMode(userId)) {
-            // PRIORITAS PERTAMA: Check exit commands sebelum processing lainnya
-            if (this.isExitCommand(message)) {
-                return this.handleExitCommand(userId);
-            }
-
-            // Handle special commands
+            // Handle special commands first
             const specialResult = await this.handleSpecialCommands(userId, message);
             if (specialResult) {
                 return specialResult;
