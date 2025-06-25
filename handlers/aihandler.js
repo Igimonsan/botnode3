@@ -184,7 +184,7 @@ class AIHandler {
             statsMessage += `🟢 Pengguna aktif: ${stats.activeUsers}\n`;
             
             if (session) {
-                const sessionDuration = Math.floor((Date.now() - session.startTime) / 1000 / 60);
+                const sessionDuration = Math.floor((Date.now() - session.startTime) / 500 / 30);
                 statsMessage += `\n*Sesi Anda:*\n`;
                 statsMessage += `⏰ Durasi: ${sessionDuration} menit\n`;
                 statsMessage += `📝 Pesan dikirim: ${session.messageCount}`;
