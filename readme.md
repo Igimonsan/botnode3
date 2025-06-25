@@ -27,12 +27,17 @@ Bot WhatsApp multifungsi yang dapat mendownload video TikTok tanpa watermark dan
 - Generate sticker via foto
 - Generate sticker via video 
 
+### Generate random quote 
+- Generate quotes
+- Generate pantun
+- Generate kata kata motivasi
+  
 ## 🚀 Instalasi
 
 ### 1. Clone Repository
 ```bash
 git clone <repository-url>
-cd tiktok-whatsapp-ai-bot
+cd bot-by-igimonsan
 ```
 
 ### 2. Install Dependencies
