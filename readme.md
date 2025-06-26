@@ -219,13 +219,11 @@ Jika ada pertanyaan atau issue:
 ## Update sessions
 - Update Sessions harus dilakukan secara berkala, terutama jika BOT offline. karena ada kalanya Sessions login BOT sudah expired
   Step - by step
-  1. Remove folder Sessions lama ```bash
-$git rm -r sessions```
+  1. Remove folder Sessions lama ```$git rm -r sessions```
   2. Jalankan npm start dengan lokal (Cmd) lalu scan
-  3. Upload folder sessions ```bash
-  $git add sessions```
-  5. Tambahkan commit ```bash $git commit -m "Komentar"```
-  6. Push ```bash $git push -up Origin main```
+  3. Upload folder sessions ```$git add sessions```
+  5. Tambahkan commit ```$git commit -m "Komentar"```
+  6. Push ```$git push -up Origin main```
 Tunggu sampai folder sessions benar benar terbaca oleh vps/tempat hosting kamu. Jika sudah BOT akan otomatis online kembali
 ! GUNAKAN DENGAN BIJAK
 
