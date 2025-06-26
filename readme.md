@@ -228,4 +228,7 @@ $git rm -r sessions```
   6. Push ```bash $git push -up Origin main```
 Tunggu sampai folder sessions benar benar terbaca oleh vps/tempat hosting kamu. Jika sudah BOT akan otomatis online kembali
 ! GUNAKAN DENGAN BIJAK
+
+
+
 **Made with Igimonsan**
