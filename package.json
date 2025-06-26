@@ -1,7 +1,7 @@
 {
-  "name": "tiktok-whatsapp-ai-bot",
+  "name": "bot-wa-by-igimonsan",
   "version": "2.0.0",
-  "description": "WhatsApp Bot untuk download TikTok tanpa watermark + AI Chat dengan Hugging Face",
+  "description": "WhatsApp Bot dengan 5 fitur",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -17,7 +17,7 @@
     "chat",
     "huggingface"
   ],
-  "author": "Your Name",
+  "author": "Igimonsan",
   "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.18",
