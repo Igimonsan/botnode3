@@ -1,6 +1,5 @@
 const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
-const { downloadVideo } = require('../utils/tiktokdownloader');
 
 const client = new Client();
 const userCategory = {};
