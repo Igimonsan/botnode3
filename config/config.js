@@ -50,7 +50,7 @@ const config = {
     sticker: {
         maxSize: 1024 * 1024 * 5, // 5MB max file size
         quality: 100,
-        packname: 'WhatsApp Bot',
+        packname: 'IGIMONSAN BOT',
         author: 'Igimonsan Bot',
         supportedFormats: ['jpg', 'jpeg', 'png', 'gif', 'webp', 'mp4', 'webm'],
         maxDuration: 10 // seconds for video stickers
@@ -84,7 +84,7 @@ const config = {
 
         processingSticker: '🎨 Sedang membuat sticker...',
 
-        aiThinking: '🤖 waiting sedelo...',
+        aiThinking: '🤖Wait...',
 
         success: '✅ Video berhasil didownload!',
 
@@ -109,7 +109,7 @@ const config = {
 
         stickerHelp: `🎨 *BANTUAN STICKER MAKER*\n\n*Cara membuat sticker:*\n1. Masuk ke mode Sticker Maker\n2. Kirim gambar atau video\n3. Bot akan otomatis membuat sticker\n\n*Format yang didukung:*\n📸 Gambar: JPG, JPEG, PNG, WEBP, GIF\n🎬 Video: MP4, WEBM (max 10 detik)\n\n*Batasan:*\n• Ukuran file maksimal: 5MB\n• Durasi video maksimal: 10 detik\n• Gambar akan diubah ke ukuran 512x512\n\n*Tips untuk hasil terbaik:*\n• Gunakan gambar dengan rasio 1:1 (persegi)\n• Background transparan akan dipertahankan\n• Video pendek menghasilkan sticker animasi yang baik\n\n*Perintah:*\n/menu - Kembali ke menu utama\n/help - Bantuan lengkap`,
 
-        info: `ℹ️ *INFO BOT*\n\n*Nama:* TikTok Downloader & AI Chat Bot\n*Versi:* 2.4.0\n*Fitur:*\n📹 Download TikTok tanpa watermark\n⚡ Quick Download (tanpa kategori)\n🤖 Chat dengan AI (Hugging Face)\n🎨 Sticker Maker dari gambar/video\n💭 Quote Generator (Quote, Pantun, Motivasi)\n🧹 Auto cleanup file\n🔄 Exit dari mode AI ke menu utama\n\n*Developer:* Igimonsan\n*Status:* 🟢 Online`
+        info: `ℹ️ *INFO BOT*\n\n*Nama:*Bot by IGIMONSAN\n*Versi:* 4.0.0\n*Fitur:*\n⚡ Quick Download video tiktok\n🤖 Chat dengan AI (Beta)\n🎨 Sticker Maker dari gambar\n💭 Quote Generator (Quote, Pantun, Motivasi)\n🧹 Auto cleanup file\n🔄 Exit dari mode AI ke menu utama\n\n*Developer:* Igimonsan\n*Status:* 🟢 Online`
     },
 
     // AI Chat modes
